@@ -20,7 +20,7 @@ export const Courses = ({ courses }: { courses: Course[] }) => {
                 course.title.includes('Machine Learning') ||
                 course.title.includes('Harnoor')
               ) {
-                router.push('https://harkirat.classx.co.in/');
+                router.push('https://harkirat.classx.co.in/purchases');
               } else {
                 router.push(`/courses/${course.id}`);
               }

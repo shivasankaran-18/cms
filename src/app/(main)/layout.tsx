@@ -6,13 +6,13 @@ interface Props {
   children: React.ReactNode;
 }
 
-export default (props: Props) => {
+export default ({ children }: Props) => {
   return (
     <div className="flex h-screen overflow-hidden">
       <Sidebar />
       <div className="w-full">
         <Appbar className="border-b p-4 pb-2" />
-        {props.children}
+        {children}
       </div>
     </div>
   );
